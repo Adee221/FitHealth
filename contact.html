@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact - FitHealth</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌿</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- =============================================
+       NAVBAR
+       ============================================= -->
+  <nav class="navbar">
+    <a href="index.html" class="navbar-logo">Fit<span>Health</span></a>
+    <ul class="navbar-menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="tips.html">Tips</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="hamburger" aria-label="Toggle Menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
+
+
+  <!-- =============================================
+       PAGE HERO
+       ============================================= -->
+  <div class="page-hero">
+    <h1>Hubungi Kami </h1>
+    <p>Punya pertanyaan atau saran? Kami senang mendengar dari kamu!</p>
+  </div>
+
+
+  <!-- =============================================
+       CONTACT SECTION: Info + Form
+       ============================================= -->
+  <div class="contact-wrapper">
+
+    <!-- Kiri: Informasi kontak -->
+    <div class="contact-info">
+      <h2>Ayo <span>Terhubung</span>!</h2>
+      <p>
+        Jangan ragu untuk menghubungi kami. Tim FitHealth siap membantu
+        menjawab pertanyaan seputar kesehatan, memberikan saran, atau
+        sekadar ngobrol tentang gaya hidup sehat.
+      </p>
+
+      <!-- Detail kontak -->
+      <div class="contact-detail">
+        <div class="contact-detail-item">
+          <div class="icon">📧</div>
+          <span>hello@fithealth.id</span>
+        </div>
+        <div class="contact-detail-item">
+          <div class="icon">📍</div>
+          <span>Mojokerto, Jawa Timur, Indonesia</span>
+        </div>
+        <div class="contact-detail-item">
+          <div class="icon">⏰</div>
+          <span>Senin – Jumat, 08.00 – 17.00 WIB</span>
+        </div>
+      </div>
+
+      <!-- Ikon sosial media -->
+      <p style="font-size: 0.88rem; color: var(--gray-text); margin-bottom: 12px; font-weight: 600;">
+        Ikuti Kami:
+      </p>
+      <div class="social-links">
+        <!-- Instagram -->
+        <div class="social-link" title="Instagram" role="button" aria-label="Instagram">
+          📸
+        </div>
+        <!-- Twitter/X -->
+        <div class="social-link" title="Twitter / X" role="button" aria-label="Twitter">
+          🐦
+        </div>
+        <!-- YouTube -->
+        <div class="social-link" title="YouTube" role="button" aria-label="YouTube">
+          ▶️
+        </div>
+        <!-- TikTok -->
+        <div class="social-link" title="TikTok" role="button" aria-label="TikTok">
+          🎵
+        </div>
+      </div>
+    </div><!-- end contact-info -->
+
+
+    <!-- Kanan: Form kontak -->
+    <div class="contact-form">
+      <h3 style="font-size: 1.2rem; font-weight: 700; color: var(--dark); margin-bottom: 24px;">
+        Kirim Pesan ✉️
+      </h3>
+
+      <!-- Form — ID digunakan oleh script.js -->
+      <form id="contactForm" novalidate>
+
+        <!-- Field Nama -->
+        <div class="form-group">
+          <label for="name">Nama Lengkap</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Masukkan nama kamu"
+            autocomplete="name"
+          />
+        </div>
+
+        <!-- Field Email -->
+        <div class="form-group">
+          <label for="email">Alamat Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="contoh@email.com"
+            autocomplete="email"
+          />
+        </div>
+
+        <!-- Field Pesan -->
+        <div class="form-group">
+          <label for="pesan">Pesan</label>
+          <textarea
+            id="pesan"
+            name="pesan"
+            placeholder="Tulis pesanmu di sini..."
+          ></textarea>
+        </div>
+
+        <!-- Tombol Submit -->
+        <button type="submit" class="btn-submit">
+          Kirim Pesan 
+        </button>
+
+      </form>
+    </div><!-- end contact-form -->
+
+  </div><!-- end contact-wrapper -->
+
+
+  <!-- =============================================
+       SECTION: FAQ Singkat
+       ============================================= -->
+  <section style="background: var(--gray-light); padding: 70px 5%;">
+    <div class="section-title">
+      <h2>Pertanyaan Umum</h2>
+      <p>Beberapa pertanyaan yang sering kami terima dari pembaca setia FitHealth.</p>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="cards-grid" style="max-width: 900px; margin: 0 auto;">
+      <div class="card">
+        <div class="card-icon">❓</div>
+        <h3>Apakah tips di FitHealth gratis?</h3>
+        <p>Ya! Semua tips dan informasi kesehatan di FitHealth dapat diakses secara gratis oleh siapa saja.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">🩺</div>
+        <h3>Apakah ini pengganti dokter?</h3>
+        <p>Tidak. FitHealth menyediakan informasi umum. Untuk kondisi medis serius, selalu konsultasikan dengan dokter.</p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- =============================================
+       FOOTER
+       ============================================= -->
+  <footer>
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="logo">Fit<span>Health</span></div>
+        <p>Platform informasi kesehatan dan gaya hidup sehat untuk generasi muda Indonesia.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Halaman</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="tips.html">Tips Sehat</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Topik</h4>
+        <ul>
+          <li><a href="tips.html">Olahraga</a></li>
+          <li><a href="tips.html">Nutrisi</a></li>
+          <li><a href="tips.html">Mental Health</a></li>
+          <li><a href="tips.html">Pola Tidur</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 <span>FitHealth</span>. Dibuat dengan ❤️ untuk kesehatan Indonesia.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

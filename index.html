@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FitHealth - Healthy Body, Healthy Life</title>
+  <!-- Favicon emoji -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌿</text></svg>" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <!-- File CSS utama -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- =============================================
+       NAVBAR
+       ============================================= -->
+  <nav class="navbar">
+    <!-- Logo -->
+    <a href="index.html" class="navbar-logo">Fit<span>Health</span></a>
+
+    <!-- Menu navigasi -->
+    <ul class="navbar-menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="tips.html">Tips</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+
+    <!-- Tombol hamburger untuk mobile -->
+    <div class="hamburger" aria-label="Toggle Menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
+
+
+  <!-- =============================================
+       HERO SECTION
+       ============================================= -->
+  <section class="hero">
+    <!-- Teks utama hero -->
+    <div class="hero-content">
+      <div class="hero-badge">🌿 Gaya Hidup Sehat</div>
+      <h1>
+        Healthy Body,<br />
+        <span class="highlight">Healthy Life</span>
+      </h1>
+      <p>
+        Mulailah perjalanan menuju hidup yang lebih sehat bersama FitHealth.
+        Temukan tips, inspirasi, dan panduan kesehatan yang mudah diterapkan
+        dalam kehidupan sehari-hari.
+      </p>
+      <!-- Tombol CTA -->
+      <a href="tips.html" class="btn-primary">Explore More</a>
+      <a href="about.html" class="btn-outline">Tentang Kami</a>
+    </div>
+
+    <!-- Gambar hero: foto orang berolahraga -->
+    <div class="hero-image">
+      <img
+        src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&q=80&fit=crop"
+        alt="Seseorang sedang berolahraga untuk gaya hidup sehat"
+        loading="eager"
+      />
+    </div>
+  </section>
+
+
+  <!-- =============================================
+       SECTION: MANFAAT HIDUP SEHAT
+       ============================================= -->
+  <section class="benefits">
+    <!-- Judul section -->
+    <div class="section-title">
+      <h2>Manfaat Hidup Sehat</h2>
+      <p>Tiga pilar utama untuk menjaga tubuh dan pikiran tetap prima setiap hari.</p>
+      <div class="section-line"></div>
+    </div>
+
+    <!-- 3 Card Manfaat -->
+    <div class="cards-grid">
+
+      <!-- Card 1: Olahraga -->
+      <div class="card">
+        <div class="card-icon">🏋️</div>
+        <h3>Olahraga Teratur</h3>
+        <p>
+          Berolahraga minimal 30 menit per hari membantu menjaga berat badan ideal,
+          meningkatkan daya tahan tubuh, dan membuat mood jadi lebih baik.
+        </p>
+      </div>
+
+      <!-- Card 2: Nutrisi -->
+      <div class="card">
+        <div class="card-icon">🥗</div>
+        <h3>Makanan Bergizi</h3>
+        <p>
+          Konsumsi makanan kaya serat, protein, vitamin, dan mineral untuk memenuhi
+          kebutuhan nutrisi tubuh dan menjaga energi sepanjang hari.
+        </p>
+      </div>
+
+      <!-- Card 3: Istirahat -->
+      <div class="card">
+        <div class="card-icon">😴</div>
+        <h3>Istirahat Cukup</h3>
+        <p>
+          Tidur 7–8 jam setiap malam memungkinkan tubuh untuk pulih, memperkuat
+          sistem imun, dan meningkatkan konsentrasi serta produktivitas.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- =============================================
+       SECTION: CALL TO ACTION (CTA Kecil)
+       ============================================= -->
+  <section style="background: linear-gradient(135deg, var(--green-dark), var(--green-main)); color: white; text-align: center; padding: 70px 5%;">
+    <h2 style="font-size: clamp(1.6rem, 3vw, 2.2rem); font-weight: 700; margin-bottom: 14px;">
+      Siap Memulai Gaya Hidup Sehat? 🌱
+    </h2>
+    <p style="font-size: 1rem; opacity: 0.85; max-width: 500px; margin: 0 auto 32px;">
+      Temukan berbagai tips kesehatan praktis yang bisa langsung kamu terapkan mulai hari ini.
+    </p>
+    <a href="tips.html" style="
+      display: inline-block;
+      background: white;
+      color: var(--green-dark);
+      font-family: var(--font);
+      font-weight: 700;
+      font-size: 0.95rem;
+      padding: 14px 36px;
+      border-radius: 50px;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+    "
+    onmouseover="this.style.transform='translateY(-3px)'; this.style.boxShadow='0 8px 25px rgba(0,0,0,0.2)'"
+    onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 15px rgba(0,0,0,0.15)'">
+      Lihat Tips Sehat →
+    </a>
+  </section>
+
+
+  <!-- =============================================
+       FOOTER
+       ============================================= -->
+  <footer>
+    <div class="footer-top">
+      <!-- Brand -->
+      <div class="footer-brand">
+        <div class="logo">Fit<span>Health</span></div>
+        <p>Platform informasi kesehatan dan gaya hidup sehat untuk generasi muda Indonesia.</p>
+      </div>
+
+      <!-- Navigasi -->
+      <div class="footer-col">
+        <h4>Halaman</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="tips.html">Tips Sehat</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Topik -->
+      <div class="footer-col">
+        <h4>Topik</h4>
+        <ul>
+          <li><a href="tips.html">Olahraga</a></li>
+          <li><a href="tips.html">Nutrisi</a></li>
+          <li><a href="tips.html">Mental Health</a></li>
+          <li><a href="tips.html">Pola Tidur</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Copyright -->
+    <div class="footer-bottom">
+      <p>&copy; 2025 <span>FitHealth</span>. Dibuat dengan ❤️ untuk kesehatan Indonesia.</p>
+    </div>
+  </footer>
+
+
+  <!-- File JavaScript utama -->
+  <script src="script.js"></script>
+</body>
+</html>
