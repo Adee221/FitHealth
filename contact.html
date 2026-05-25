@@ -12,6 +12,9 @@
 </head>
 <body>
 
+  <div id="cursor-dot" aria-hidden="true"></div>
+  <div id="cursor-ring" aria-hidden="true"></div>
+
   <nav class="navbar">
     <a href="index.html" class="navbar-logo">Fit<span>Health</span></a>
     <ul class="navbar-menu">
@@ -21,7 +24,9 @@
       <li><a href="contact.html">Contact</a></li>
     </ul>
     <div class="hamburger" aria-label="Toggle Menu">
-      <span></span><span></span><span></span>
+      <span></span>
+      <span></span>
+      <span></span>
     </div>
   </nav>
 
@@ -31,6 +36,7 @@
   </div>
 
   <div class="contact-wrapper">
+
     <div class="contact-info">
       <h2>Ayo <span>Terhubung</span>!</h2>
       <p>Jangan ragu untuk menghubungi kami. Tim FitHealth siap membantu menjawab pertanyaan seputar kesehatan, memberikan saran, atau sekadar ngobrol tentang gaya hidup sehat.</p>
@@ -38,43 +44,63 @@
       <div class="contact-detail">
         <div class="contact-detail-item">
           <div class="icon">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#40916c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#40916c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect width="20" height="16" x="2" y="4" rx="2"/>
+              <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+            </svg>
           </div>
           <span>hello@fithealth.id</span>
         </div>
         <div class="contact-detail-item">
           <div class="icon">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#40916c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#40916c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/>
+              <circle cx="12" cy="10" r="3"/>
+            </svg>
           </div>
           <span>Mojokerto, Jawa Timur, Indonesia</span>
         </div>
         <div class="contact-detail-item">
           <div class="icon">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#40916c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#40916c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"/>
+              <polyline points="12 6 12 12 16 14"/>
+            </svg>
           </div>
           <span>Senin – Jumat, 08.00 – 17.00 WIB</span>
         </div>
       </div>
 
-      <p style="font-size:0.88rem;color:var(--gray-text);margin-bottom:12px;font-weight:600;">Ikuti Kami:</p>
+      <p style="font-size: 0.88rem; color: var(--gray-text); margin-bottom: 12px; font-weight: 600;">Ikuti Kami:</p>
       <div class="social-links">
         <div class="social-link" title="Instagram" role="button" aria-label="Instagram">
-          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect width="20" height="20" x="2" y="2" rx="5"/>
+            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+          </svg>
         </div>
         <div class="social-link" title="Twitter" role="button" aria-label="Twitter">
-          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/>
+          </svg>
         </div>
         <div class="social-link" title="YouTube" role="button" aria-label="YouTube">
-          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"/><polygon points="10 15 15 12 10 9"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"/>
+            <polygon points="10 15 15 12 10 9"/>
+          </svg>
         </div>
         <div class="social-link" title="TikTok" role="button" aria-label="TikTok">
-          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"/>
+          </svg>
         </div>
       </div>
     </div>
 
     <div class="contact-form">
-      <h3 style="font-size:1.2rem;font-weight:700;color:var(--dark);margin-bottom:24px;">Kirim Pesan</h3>
+      <h3 style="font-size: 1.2rem; font-weight: 700; color: var(--dark); margin-bottom: 24px;">Kirim Pesan</h3>
       <form id="contactForm" novalidate>
         <div class="form-group">
           <label for="name">Nama Lengkap</label>
@@ -91,25 +117,32 @@
         <button type="submit" class="btn-submit">Kirim Pesan</button>
       </form>
     </div>
+
   </div>
 
-  <section style="background:var(--gray-light);padding:70px 5%;">
+  <section style="background: var(--gray-light); padding: 70px 5%;">
     <div class="section-title">
       <h2>Pertanyaan Umum</h2>
       <p>Beberapa pertanyaan yang sering kami terima dari pembaca setia FitHealth.</p>
       <div class="section-line"></div>
     </div>
-    <div class="cards-grid" style="max-width:900px;margin:0 auto;">
+    <div class="cards-grid" style="max-width: 900px; margin: 0 auto;">
       <div class="card">
         <div class="card-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#2d6a4f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#2d6a4f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"/>
+            <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/>
+            <line x1="12" y1="17" x2="12.01" y2="17"/>
+          </svg>
         </div>
         <h3>Apakah tips di FitHealth gratis?</h3>
         <p>Ya! Semua tips dan informasi kesehatan di FitHealth dapat diakses secara gratis oleh siapa saja.</p>
       </div>
       <div class="card">
         <div class="card-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#2d6a4f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#2d6a4f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/>
+          </svg>
         </div>
         <h3>Apakah ini pengganti dokter?</h3>
         <p>Tidak. FitHealth menyediakan informasi umum. Untuk kondisi medis serius, selalu konsultasikan dengan dokter.</p>
@@ -143,7 +176,7 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <p>&copy; 2025 <span>FitHealth</span>. Dibuat dengan ❤️ untuk kesehatan Indonesia.</p>
+      <p>&copy; 2025 <span>FitHealth</span>. Dibuat dengan  untuk kesehatan Indonesia.</p>
     </div>
   </footer>
 
